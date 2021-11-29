@@ -14,10 +14,11 @@ $ageGet = $_GET["age"];
 
 $hasDot = strchr($emailGet, ".");
 $hasAt = strchr($emailGet, "@");
+$hasNUmber = is_numeric($ageGet);
 
 
 
-if(strlen($nameGet) > 3 && $hasDot && $hasAt){
+if((strlen($nameGet) > 3) && $hasDot && $hasAt && $hasNUmber ){
     echo "accesso riuscito";
 } else{
     echo "accesso rifiutato";
@@ -30,3 +31,4 @@ if(strlen($nameGet) > 3 && $hasDot && $hasAt){
 // }
 
 ?>
+
