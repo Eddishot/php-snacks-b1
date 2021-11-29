@@ -17,16 +17,16 @@ $hasAt = strchr($emailGet, "@");
 
 
 
-if(strlen($nameGet) > 3){
+if(strlen($nameGet) > 3 && $hasDot && $hasAt){
     echo "accesso riuscito";
 } else{
     echo "accesso rifiutato";
 }
 
-if($hasDot && $hasAt){
-    echo "OOKK";
-}else{
- echo"NOT OOK";
-}
+// if($hasDot && $hasAt){
+//     echo "OOKK";
+// }else{
+//  echo"NOT OOK";
+// }
 
 ?>
