@@ -48,12 +48,21 @@ $posts = [
 ];
 
 $chiaviPosts = array_keys($posts);
-
+// ciclo for vedere le chiavi dell`Array
 for ($i=0; $i <count($chiaviPosts) ; $i++) { 
     $chiave = $chiaviPosts[$i];
     $singlePost = $posts[$chiave] ;
     var_dump($singlePost);
-}
 
+// adesso invece un ciclo per vedere i valori delle chiavi 
+
+    for ($j=0; $j < count($singlePost) ; $j++) { 
+        $singlePost = $singlePost[$j];
+        $title = $singlePost[ $title];
+        $author = $singlePost[$author];
+        $text = $singlePost[$author];
+    };
+
+}
 
 ?>
